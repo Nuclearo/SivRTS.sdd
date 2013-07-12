@@ -7,9 +7,7 @@ local unitDef  =  {
 	ObjectName = "placey.s3o",
 	name = "Placey",
 	Side = "TANKS",
---  TEDClass = "TANK",
 	UnitName = "placey",
-	--script = "tankscript.lua",
 	
 --Unit limitations and properties
 	BuildTime = 10,

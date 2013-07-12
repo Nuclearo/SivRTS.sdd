@@ -4,9 +4,10 @@ local unitdef = {
 --Basics
 	name = "Command Center",
 	side = "TANKS",
-	objectName = "PlaceyB.s3o",
+	objectName = "PlaceyF.s3o",
 	category = "BUILDING LARGE",
 	unitname = "command",
+	script = "commandscript.lua",
 
 --build properties
 	description = "Main TANKS command building",
@@ -26,24 +27,25 @@ local unitdef = {
 	maxVelocity = 0,
 	MaxSlope = 10,
 	MaxWaterDepth = 0,
-	footprintX = 8,
-	footprintZ = 8,
-	YardMap = "yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
+	footprintX = 4,
+	footprintZ = 4,
+	YardMap = "cccc cccc cccc cccc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
 
 
 -- Abilities
 	Builder = 1,
     Reclaimable = 0,
-	ShowNanoSpray = 0,
+	-- ShowNanoSpray = 0,
 	CanBeAssisted = 0,
-	canBuild = 1,
-	canMove = 0,
+	-- canBuild = 1,
+	EnergyMake = 400, 
+	-- canMove = 0,
 	makesmetal = 1,
-	metalmake = 10,
+	metalmake = 100,
 	buildoptions = 
 	{
-		"Miner",
-		"placey"
+		"miner",
+		"placey",
 	},
 }
 

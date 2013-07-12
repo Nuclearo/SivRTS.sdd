@@ -1,5 +1,5 @@
 local modinfo = {
-	name = "Siv's first mod of modness",
+	name = "Siv's first mod of modness!",
 	shortname = "Siv",
 	game = "Siv mod of modness",
 	shortgame = "Siv",

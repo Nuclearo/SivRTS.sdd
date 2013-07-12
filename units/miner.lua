@@ -1,12 +1,12 @@
-local unitname = "Miner"
+local unitname = "miner"
 
 local unitdef = {
 -- Internal stuff
 	name = "Miner",
 	side = "TANKS",
-	ObjecName = "placey.s3o"
+	ObjectName = "placey.s3o",
 	Category = "BOT SMALL NOTAIR",
-	unitname = "placey",
+	unitname = "miner",
 	BuildPic = "filename.bmp",
 
 -- Unit properties
@@ -15,6 +15,7 @@ local unitdef = {
 	MaxDamage = 200,
 	RadarDistance = 0,
 	SightDistance = 400,
+	Upright = 0,
 
 -- Resource stuff
 	BuildCostMetal = 50,
@@ -32,14 +33,14 @@ local unitdef = {
 	TurnRate = 2048, 
 
 --Abilities
-	Builder = true,
-	CanAttack = false,
+	Builder = 1,
+	CanAttack = 0,
 	CanGuard = 1,
 	CanMove = 1,
 	CanPatrol = 1,
 	CanStop = 1,
 	LeaveTracks = 0,
-	Reclaimable = 0
+	Reclaimable = 0,
 }
 
-return lowerkeys({ [unitname] = unitdef})
+return lowerkeys({ [unitname] = unitdef })
