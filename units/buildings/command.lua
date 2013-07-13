@@ -33,6 +33,7 @@ local unitdef = {
 -- Abilities
 	Builder = 1,
     Reclaimable = 0,
+    canMove = true,
 	-- ShowNanoSpray = 0,
 	CanBeAssisted = 0,
 	-- canBuild = 1,
