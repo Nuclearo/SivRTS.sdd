@@ -34,6 +34,8 @@ local unitdef = {
 
 --Abilities
 	Builder = 1,
+	BuildDistance = 200,
+	WorkerTime = 100,
 	CanAttack = 0,
 	CanGuard = 1,
 	CanMove = 1,
@@ -41,6 +43,16 @@ local unitdef = {
 	CanStop = 1,
 	LeaveTracks = 0,
 	Reclaimable = 0,
+-- 	EnergyMake = 400, 
+-- 	-- canMove = 0,
+-- 	makesmetal = 1,
+-- 	metalmake = 100,
+
+
+-- 	buildoptions = {
+-- 		"command",
+-- 		"placey"
+-- 	}
 }
 
 return lowerkeys({ [unitname] = unitdef })

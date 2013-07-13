@@ -15,7 +15,6 @@ local unitDef  =  {
 	MaxDamage = 800,
 	RadarDistance = 0,
 	SightDistance = 400,
-	-- SoundCategory = "TANK",
 	Upright = 0,
 	
 --Energy and metal related

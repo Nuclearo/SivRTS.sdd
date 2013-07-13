@@ -20,11 +20,9 @@ local unitdef = {
 	workerTime = 2000,
 	levelground = 1,
 	commander = true,
+	ActivateWhenBuilt = true,
 
 --pathfinding etc.
-	acceleration = 0,
-	brakerate = 0,
-	maxVelocity = 0,
 	MaxSlope = 10,
 	MaxWaterDepth = 0,
 	footprintX = 4,
@@ -47,6 +45,10 @@ local unitdef = {
 		"miner",
 		"placey",
 	},
+
+	ExplodeAs = "BUILDINGLARGEDEATH",
+	SelfDestructAs = "BUILDINGLARGEDEATH",
+	SelfDestructCountdown = 5,
 }
 
 return lowerkeys({ [unitname] = unitdef})
