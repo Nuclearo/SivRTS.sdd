@@ -7,6 +7,7 @@ local unitdef = {
 	ObjectName = "placey.s3o",
 	Category = "BOT SMALL NOTAIR",
 	unitname = "miner",
+	script = "minerscript.lua",
 	BuildPic = "filename.bmp",
 
 -- Unit properties
@@ -49,10 +50,9 @@ local unitdef = {
 -- 	metalmake = 100,
 
 
--- 	buildoptions = {
--- 		"command",
--- 		"placey"
--- 	}
+	buildoptions = {
+		"command",
+	}
 }
 
 return lowerkeys({ [unitname] = unitdef })
