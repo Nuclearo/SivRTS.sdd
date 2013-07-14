@@ -1,6 +1,8 @@
 local platform, nanopoint, building =  piece "Platform", piece "main", piece "PlaceyF"
 -- declares all the pieces we'll be using.
 
+local SIG_BUILD
+
 function script.Create(unitID)
     return 0
 end
@@ -28,6 +30,24 @@ function script.Deactivate()
 	SetUnitValue(COB.BUGGER_OFF, 0)
 	return 0
 end
+
+-- function script.StartBuilding(heading, pitch)
+-- 	Signal(SIG_BUILD)
+-- 	SetSignalMask(SIG_BUILD)
+-- 	SetUnitValue(COB.YARD_OPEN, 1)
+-- 	SetUnitValue(COB.INBUILDSTANCE, 1)
+-- 	return 1
+-- end
+
+
+-- function script.StopBuilding()
+-- 	Signal(SIG_BUILD)
+-- 	SetSignalMask(SIG_BUILD)
+-- 	SetUnitValue(COB.YARD_OPEN, 0)
+-- 	SetUnitValue(COB.INBUILDSTANCE, 0)
+-- 	return 0
+-- end
+
 
 
 --Actually, I'm not sure if Activate() is called when the base is finished, rather than when it starts building anything. I'll need to check that.

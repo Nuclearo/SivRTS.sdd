@@ -20,18 +20,18 @@ local unitdef = {
 	workerTime = 100,
 	levelground = 1,
 	commander = true,
-	ActivateWhenBuilt = true,
+	ActivateWhenBuilt = false,
 
 --pathfinding etc.
 	-- acceleration = 0.1,
 	-- maxvelocity = 1,
 	-- TurnRate = 2048, 
+	-- MovementClass = "Building4x4",
 	MaxSlope = 90,
 	MaxWaterDepth = 10,
 	footprintX = 4,
 	footprintZ = 4,
-	MovementClass = "Building4x4",
-	YardMap = "cccc cccc cccc cccc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
+	YardMap = "iiii iiii cooc cooc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
 
 
 -- Abilities
