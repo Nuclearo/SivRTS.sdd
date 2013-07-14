@@ -10,12 +10,8 @@ function gadget:GetInfo()
 	}
 end
 
-if (gadgetHandler:IsSyncedCode()) then
-
---SYNCED
-
-function gadget:GameFrame()
-	gadgetHandler:RemoveGadget("SpawnPlayer")
+function gadget:GameStart()
+	-- gadgetHandler:RemoveGadget("SpawnPlayer")
 	for _,t in ipairs(Spring.GetTeamList()) do
 		local _,_,_,ai,faction = Spring.GetTeamInfo(t)
 		local unitnames = Spring.GetSideData(faction)
@@ -31,12 +27,4 @@ function gadget:GameFrame()
 			end
 		end
 	end
-end
-
-else
-
---UNSYNCED
-
-return false
-
 end
