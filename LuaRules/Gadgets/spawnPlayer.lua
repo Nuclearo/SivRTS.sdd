@@ -25,7 +25,7 @@ function gadget:GameFrame()
 			for unit,count in pairs(units) do
 				while count>0 do
 					Spring.CreateUnit(unit,math.floor(sx),math.floor(sy),math.floor(sz),0,t)
-					sx = sx + 8*UnitDefNames[unit].moveDef.xsize
+					sx = sx + 8*UnitDefNames[unit].xsize
 					count = count - 1
 				end
 			end
