@@ -15,6 +15,7 @@ if (gadgetHandler:IsSyncedCode()) then
 --SYNCED
 
 function gadget:GameFrame()
+	gadgetHandler:RemoveGadget("SpawnPlayer")
 	for _,t in ipairs(Spring.GetTeamList()) do
 		local _,_,_,ai,faction = Spring.GetTeamInfo(t)
 		local unitnames = Spring.GetSideData(faction)
@@ -22,16 +23,14 @@ function gadget:GameFrame()
 			loadstring("units = "..unitnames)()
 			local sx,sy,sz = Spring.GetTeamStartPosition(t)
 			for unit,count in pairs(units) do
-				Spring.Echo(unit,count)
 				while count>0 do
 					Spring.CreateUnit(unit,math.floor(sx),math.floor(sy),math.floor(sz),0,t)
-					sx = sx+8
-					count = count -1
+					sx = sx + 8*UnitDefNames[unit].moveDef.xsize
+					count = count - 1
 				end
 			end
 		end
 	end
-	gadgetHandler:RemoveGadget("SpawnPlayer")
 end
 
 else
