@@ -23,10 +23,14 @@ local unitdef = {
 	ActivateWhenBuilt = true,
 
 --pathfinding etc.
-	MaxSlope = 10,
-	MaxWaterDepth = 0,
+	acceleration = 0.1,
+	maxvelocity = 1,
+	MaxSlope = 90,
+	MaxWaterDepth = 10,
 	footprintX = 4,
 	footprintZ = 4,
+	TurnRate = 2048, 
+	MovementClass = "Building4x4",
 	YardMap = "cccc cccc cccc cccc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
 
 
@@ -38,8 +42,7 @@ local unitdef = {
 	ShowNanoSpray = true,
 	CanBeAssisted = 0,
 	-- canBuild = 1,
-	EnergyMake = 400, 
-	-- canMove = 0,
+	EnergyMake = 400,
 	makesmetal = 1,
 	metalmake = 100,
 	buildoptions = 
