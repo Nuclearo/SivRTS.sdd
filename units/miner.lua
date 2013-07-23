@@ -7,7 +7,7 @@ local unitdef = {
 	ObjectName = "placey.s3o",
 	Category = "BOT SMALL NOTAIR",
 	unitname = "miner",
-	script = "minerscript.lua",
+	script = "PlaaceyScript.lua",
 	BuildPic = "filename.bmp",
 
 -- Unit properties

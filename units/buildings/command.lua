@@ -7,7 +7,7 @@ local unitdef = {
 	objectName = "PlaceyF.s3o",
 	category = "BUILDING LARGE",
 	unitname = "command",
-	script = "commandscript.lua",
+	script = "PlaceyFactoryScript.lua",
 
 --build properties
 	description = "Main TANKS command building",
