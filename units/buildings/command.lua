@@ -47,7 +47,6 @@ local unitdef = {
 	buildoptions = 
 	{
 		"miner",
-		"placey",
 	},
 
 	ExplodeAs = "BUILDINGLARGEDEATH",
