@@ -7,7 +7,7 @@ local unitdef = {
 	objectName = "PlaceyF.s3o",
 	category = "BUILDING LARGE",
 	unitname = "command",
-	script = "commandscript.lua",
+	script = "PlaceyFactoryScript.lua",
 
 --build properties
 	description = "Main TANKS command building",
@@ -26,12 +26,12 @@ local unitdef = {
 	-- acceleration = 0.1,
 	-- maxvelocity = 1,
 	-- TurnRate = 2048, 
-	-- MovementClass = "Building4x4",
-	MaxSlope = 90,
+	MaxSlope = 20,
 	MaxWaterDepth = 10,
-	footprintX = 4,
-	footprintZ = 4,
-	YardMap = "iiii iiii cooc cooc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
+	footprintX = 8,
+	footprintZ = 8,
+--	YardMap = "iiii iiii cooc cooc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
+	YardMap = --[["cccc cccc cccc cccc",]]"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
 
 
 -- Abilities
@@ -47,7 +47,6 @@ local unitdef = {
 	buildoptions = 
 	{
 		"miner",
-		"placey",
 	},
 
 	ExplodeAs = "BUILDINGLARGEDEATH",
