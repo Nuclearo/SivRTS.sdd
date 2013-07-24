@@ -1,7 +1,7 @@
 local unitdef = {
 	name = "Barracks",
 	side = "TANKS",
-	objecname = "PlaceyF.s3o",
+	objectname = "PlaceyF.s3o",
 	category = "BUILDING LARGE",
 	unitname = "rax",
 	script = "PlaceyFactoryScript.lua",
@@ -18,7 +18,7 @@ local unitdef = {
 	maxslope = 10,
 	maxwaterdepth = 1,
 	footprintX = 4,
-	footprintY = 4,
+	footprintZ = 4,
 	YardMap = "cccc cccc cccc cccc",
 
 		Builder = 1,
@@ -27,9 +27,6 @@ local unitdef = {
     canPatrol = false,
 	ShowNanoSpray = true,
 	CanBeAssisted = 0,
-	EnergyMake = 400,
-	makesmetal = 1,
-	metalmake = 100,
 	buildoptions = 
 	{
 		"placey",
@@ -40,4 +37,4 @@ local unitdef = {
 	SelfDestructCountdown = 5,
 }
 
-return lowekeys( [unitdef.unitname] = unitdef )
+return lowerkeys({[unitdef.unitname] = unitdef})
