@@ -7,7 +7,7 @@ local unitdef = {
 	ObjectName = "placey.s3o",
 	Category = "BOT SMALL NOTAIR",
 	unitname = "miner",
-	script = "PlaaceyScript.lua",
+	script = "PlaceyScript.lua",
 	BuildPic = "filename.bmp",
 
 -- Unit properties
@@ -52,6 +52,7 @@ local unitdef = {
 
 	buildoptions = {
 		"command",
+		"rax"
 	}
 }
 
