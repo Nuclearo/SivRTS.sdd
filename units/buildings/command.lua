@@ -20,7 +20,7 @@ local unitdef = {
 	workerTime = 100,
 	levelground = 1,
 	commander = true,
-	ActivateWhenBuilt = false,
+	ActivateWhenBuilt = true,
 
 --pathfinding etc.
 	-- acceleration = 0.1,
@@ -28,15 +28,15 @@ local unitdef = {
 	-- TurnRate = 2048, 
 	MaxSlope = 20,
 	MaxWaterDepth = 10,
-	footprintX = 8,
-	footprintZ = 8,
---	YardMap = "iiii iiii cooc cooc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
-	YardMap = --[["cccc cccc cccc cccc",]]"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
+	footprintX = 4,
+	footprintZ = 4,
+	YardMap = "iiii iiii cooc cooc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
+	-- YardMap = "cccc cccc cccc cccc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
 
 
 -- Abilities
 	Builder = 1,
-    Reclaimable = 0,
+    Reclaimable = 1,
     canMove = true,
     canPatrol = false,
 	ShowNanoSpray = true,
@@ -44,6 +44,7 @@ local unitdef = {
 	EnergyMake = 400,
 	makesmetal = 1,
 	metalmake = 100,
+	extracsMetal = 2,
 	buildoptions = 
 	{
 		"miner",

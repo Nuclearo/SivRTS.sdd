@@ -52,6 +52,7 @@ local unitdef = {
 
 	buildoptions = {
 		"command",
+		"rax"
 	}
 }
 
