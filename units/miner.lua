@@ -47,12 +47,13 @@ local unitdef = {
 -- 	EnergyMake = 400, 
 -- 	-- canMove = 0,
 -- 	makesmetal = 1,
--- 	metalmake = 100,
+	metalmake = 50,
 
 
 	buildoptions = {
 		"command",
-		"rax"
+		"rax",
+		"testmex"
 	}
 }
 

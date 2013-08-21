@@ -7,7 +7,7 @@ local unitdef = {
 	objectName = "PlaceyF.s3o",
 	category = "BUILDING LARGE",
 	unitname = "command",
-	script = "PlaceyFactoryScript.lua",
+	script = "commandscript.lua",
 
 --build properties
 	description = "Main TANKS command building",
@@ -19,8 +19,9 @@ local unitdef = {
 	buildcostEnergy = 0,
 	workerTime = 100,
 	levelground = 1,
-	commander = true,
-	ActivateWhenBuilt = true,
+	commander = false,
+	ActivateWhenBuilt = false,
+	onoffable = true,
 
 --pathfinding etc.
 	-- acceleration = 0.1,
@@ -41,13 +42,15 @@ local unitdef = {
     canPatrol = false,
 	ShowNanoSpray = true,
 	CanBeAssisted = 0,
-	EnergyMake = 400,
-	makesmetal = 1,
-	metalmake = 100,
-	extracsMetal = 2,
+	-- EnergyMake = 400,
+	-- makesmetal = true,
+	-- metalmake = 0,
+	extractsMetal = 0.0010000000474975,
+	metalStorage = 2000,
 	buildoptions = 
 	{
 		"miner",
+		"bmobmex"
 	},
 
 	ExplodeAs = "BUILDINGLARGEDEATH",

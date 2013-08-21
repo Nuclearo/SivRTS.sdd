@@ -9,7 +9,7 @@ local unitdef = {
 
     builtime = 400,
     buildcostMetal = 500,
-    buildCostEnergy = 100,
+    buildCostEnergy = 0,
     maxDamage = 1000,
     radardistance = 0,
     sightdistance = 300,

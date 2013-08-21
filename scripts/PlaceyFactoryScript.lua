@@ -1,5 +1,6 @@
 local platform, nanopoint, building =  piece "Platform", piece "main", piece "PlaceyF"
 -- declares all the pieces we'll be using.
+local SIG_BUILD = 1
 
 function script.Create(unitID)
     return 0
@@ -13,20 +14,31 @@ function script.QueryNanoPiece() return nanopoint end
 
 function script.Activate()
     -- Begin building! - open the yard to let vehicles move around in the building, start building, and repel any other units in the way.
-	SetUnitValue(COB.YARD_OPEN, 1)
+    SetUnitValue(COB.YARD_OPEN, 1)
 	SetUnitValue(COB.INBUILDSTANCE, 1)
 	SetUnitValue(COB.BUGGER_OFF, 1)
     -- This uses a lua way of setting old COB constants. There's probably a better lua way of doing this directly, but I don't know what it is. This method seems to work fine, though.
-	return 1
 end
 
 
 function script.Deactivate()
     -- End building!
-	SetUnitValue(COB.YARD_OPEN, 0)
+    SetUnitValue(COB.YARD_OPEN, 0)
 	SetUnitValue(COB.INBUILDSTANCE, 0)
 	SetUnitValue(COB.BUGGER_OFF, 0)
-	return 0
+end
+
+function script.StartBuilding()
+	-- Signal(SIG_BUILD)
+	-- SetSignalMask(SIG_BUILD)
+    SetUnitValue(COB.INBUILDSTANCE, 1)
+end
+
+
+function script.StopBuilding()
+	-- Signal(SIG_BUILD)
+	-- SetSignalMask(SIG_BUILD)
+    -- SetUnitValue(COB.INBUILDSTANCE, 0)
 end
 
 
