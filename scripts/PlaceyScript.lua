@@ -4,6 +4,13 @@ function script.Create(unitID)
     return 0
 end
 
+-- function locationPing()
+-- 	while(true)do
+-- 		Sleep(1000)
+-- 		Spring.Echo(Spring.GetUnitPosition(unitID))
+-- 	end
+-- end
+
 function script.QueryNanoPiece() return nanopoint end
 
 
