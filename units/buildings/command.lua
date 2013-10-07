@@ -3,14 +3,14 @@ local unitname = "command"
 local unitdef = {
 --Basics
 	name = "Command Center",
-	side = "TANKS",
+	side = "Homans",
 	objectName = "PlaceyF.s3o",
 	category = "BUILDING LARGE",
 	unitname = "command",
 	script = "commandscript.lua",
 
 --build properties
-	description = "Main TANKS command building",
+	description = "Main Homans command building",
 	buildTime = 1000,
 	maxDamage = 2000,
 	radarDistance = 400,

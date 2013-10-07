@@ -1,6 +1,6 @@
 local unitdef = {
     name = "Barracks",
-    side = "TANKS",
+    side = "Homans",
     objectname = "PlaceyF.s3o",
     category = "BUILDING LARGE",
     unitname = "rax",
@@ -29,7 +29,7 @@ local unitdef = {
     CanBeAssisted = 0,
     buildoptions = 
     {
-        "placey",
+        "footman",
     },
 
     ExplodeAs = "BUILDINGLARGEDEATH",

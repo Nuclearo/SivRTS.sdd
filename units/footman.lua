@@ -1,13 +1,12 @@
-local unitName  =  "placey"
-
 local unitDef  =  {
 --Internal settings
 	BuildPic = "filename.bmp",
 	Category = "TANK SMALL NOTAIR",
 	ObjectName = "placey.s3o",
-	name = "Placey",
+	name = "Foot Soldier",
 	Side = "Homans",
-	UnitName = "placey",
+	UnitName = "footman",
+	script = "footmanScript.lua",
 	
 --Unit limitations and properties
 	BuildTime = 10,
@@ -84,19 +83,19 @@ local weaponDefs = {
 --        soundstart = "tank_fire",
 		soundhit = "orangeblob_explo",
 		range = 250,
-		reloadtime = 1.5,
+		reloadtime = 0.2,
 		rgbcolor = "1.0 1.0 1.0",
 		turret = true,
 		texture1 = "flame",
-		weaponvelocity = 400,
-		explosiongenerator = "custom:TANKGUN_FX",
+		weaponvelocity = 1200,
+		-- explosiongenerator = "custom:TANKGUN_FX",
 		damage =
 		{
-			default = 55,
+			default = 8,
 		},
 	},
 }
 
 
 unitDef.weaponDefs = weaponDefs
-return lowerkeys({ [unitName]  =  unitDef })
+return lowerkeys({ [unitDef.UnitName]  =  unitDef })

@@ -1,7 +1,7 @@
 local unitdef = {
     name = "Giant Mex",
-    side = "TANKS",
-    objectname = "PlaceyB.s3o",
+    side = "Homans",
+    objectname = "Placey.s3o",
     category = "BUILDING LARGE",
     unitname = "testmex",
     -- script = "PlaceyFactoryScript.lua",
@@ -16,9 +16,9 @@ local unitdef = {
 
     maxslope = 10,
     maxwaterdepth = 1,
-    footprintX = 4,
-    footprintZ = 4,
-    YardMap = "yyyy yyyy yyyy yyyy",
+    footprintX = 1,
+    footprintZ = 1,
+    YardMap = "y",
  --    builder = 1,
 	-- buildoptions = 
 	-- {

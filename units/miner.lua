@@ -3,7 +3,7 @@ local unitname = "miner"
 local unitdef = {
 -- Internal stuff
 	name = "Miner",
-	side = "TANKS",
+	side = "Homans",
 	ObjectName = "placey.s3o",
 	Category = "BOT SMALL NOTAIR",
 	unitname = "miner",
@@ -47,7 +47,7 @@ local unitdef = {
 -- 	EnergyMake = 400, 
 -- 	-- canMove = 0,
 -- 	makesmetal = 1,
-	metalmake = 50,
+	-- metalmake = 50,
 
 
 	buildoptions = {
