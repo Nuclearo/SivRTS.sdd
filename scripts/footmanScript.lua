@@ -8,7 +8,7 @@ local RESTORE_DELAY = Spring.UnitScript.GetLongestReloadTime(unitID) * 2
 function script.AimWeapon(weaponID, heading, pitch)
 	Signal(SIG_AIM)
 	SetSignalMask(SIG_AIM)
-	Turn(barrel, y_axis, heading, math.rad(80))
+	Turn(barrel, y_axis, heading, math.rad(200))
 	WaitForTurn(barrel, y_axis)
 	return true
 end
