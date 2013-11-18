@@ -17,9 +17,10 @@ function createMex()
 		if(buildProgress==1)then
 			childMex=Spring.CreateUnit("testmex",posx,posy,posz,0,Spring.GetGaiaTeamID())
 			if (Spring.ValidUnitID (childMex)) then
-				Spring.SetUnitMetalExtraction(childMex,0.1,1000)
+				Spring.SetUnitMetalExtraction(childMex,0.1,512)
 				Spring.SetUnitNoSelect (childMex, true)
 				Spring.SetUnitNoDraw(childMex,true)
+				Spring.SetUnitNeutral (childMex, true)
 				-- Sleep(2000)
 				Spring.SetUnitResourcing(unitID,"umm",Spring.GetUnitMetalExtraction(childMex))
 			end
@@ -50,7 +51,6 @@ function script.Deactivate()
     SetUnitValue(COB.INBUILDSTANCE, 0)
     SetUnitValue(COB.BUGGER_OFF, 0)
     -- Spring.Echo("CC Deactivated")
-	Spring.DestroyUnit(childMex,false,true)
     return 0
 end
 

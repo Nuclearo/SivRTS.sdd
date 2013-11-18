@@ -24,7 +24,7 @@ local unitdef = {
 
 --Pathfinding and related
 	Acceleration = 0.32, 
-	BrakeRate = 0.4, 
+	BrakeRate = 0.8, 
 	FootprintX = 2, 
 	FootprintZ = 2, 
 	MaxSlope = 32, 
@@ -44,7 +44,6 @@ local unitdef = {
 	CanStop = 1,
 	LeaveTracks = 0,
 	Reclaimable = 0,
-    extractsMetal = 0,
 -- 	EnergyMake = 400, 
 	-- canMove = 0,
 -- 	makesmetal = 1,

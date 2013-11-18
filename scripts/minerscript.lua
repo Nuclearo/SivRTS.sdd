@@ -1,4 +1,5 @@
-local nanopoint = piece "sphere", barrel = piece "sphere"
+local nanopoint = piece "sphere"
+local barrel = piece "sphere"
 
 local SIG_AIM = 2
 

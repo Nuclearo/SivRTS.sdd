@@ -14,7 +14,6 @@ local unitdef = {
     radardistance = 0,
     sightdistance = 300,
     workertime = 16,
-    extractsMetal = 0,
 
     maxslope = 10,
     maxwaterdepth = 1,

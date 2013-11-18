@@ -22,7 +22,7 @@ local unitDef  =  {
 	
 --Pathfinding and related
 	Acceleration = 0.32,
-	BrakeRate = 0.4,
+	BrakeRate = 1.4,
 	FootprintX = 2,
 	FootprintZ = 2,
 	MaxSlope = 15,

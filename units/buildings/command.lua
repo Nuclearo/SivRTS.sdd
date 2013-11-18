@@ -31,7 +31,7 @@ local unitdef = {
 	MaxWaterDepth = 10,
 	footprintX = 4,
 	footprintZ = 4,
-	YardMap = "iiii iiii cooc cooc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
+	YardMap = "yyyy yyyy cooc cooc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
 	-- YardMap = "cccc cccc cccc cccc",--"yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy yyyyyyyy",
 
 
@@ -45,7 +45,7 @@ local unitdef = {
 	-- EnergyMake = 400,
 	-- makesmetal = true,
 	-- metalmake = 0,
-	extractsMetal = 0.0010000000474975,
+	extractsMetal = 0.1,
 	metalStorage = 2000,
 	buildoptions = 
 	{
