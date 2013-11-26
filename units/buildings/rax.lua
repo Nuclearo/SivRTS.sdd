@@ -30,6 +30,7 @@ local unitdef = {
     buildoptions = 
     {
         "footman",
+        "sniper",
     },
 
     ExplodeAs = "BUILDINGLARGEDEATH",
