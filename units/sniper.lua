@@ -1,8 +1,8 @@
 local unitdef ={
 	name = "Reaper's Eye",
-    side = "Homan",
+    side = "Homans",
     objectname = "placey.s3o",
-    category = "",
+    category = "NOTAIR SMALL TANK",
     unitname = "sniper",
     script = "footmanScript.lua",
     description = "Shoots very far, hits very deadly.",
@@ -71,7 +71,7 @@ local weaponDefs = {
 		size = 4,
 --        soundstart = "tank_fire",
 		soundhit = "orangeblob_explo",
-		range = 250,
+		range = 800,
 		reloadtime = 2,
 		rgbcolor = "1.0 1.0 1.0",
 		-- turret = true,
@@ -84,5 +84,8 @@ local weaponDefs = {
 		},
 	},
 }
+
+
+unitdef.weaponDefs = weaponDefs
 
 return lowerkeys({ [unitdef.unitname] = unitdef})
